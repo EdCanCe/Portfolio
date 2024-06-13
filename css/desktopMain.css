@@ -1,3 +1,7 @@
+body{
+    visibility: visible;
+}
+
 *{
     color: blue;
 }

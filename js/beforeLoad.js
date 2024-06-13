@@ -6,6 +6,16 @@ function loadCSS(filename) {
     document.head.appendChild(link);
 }
 
+function removeCSS(filename) {
+    var links = document.getElementsByTagName('link');
+    for(var i = 0; i < links.length; i++) {
+        if (links[i].getAttribute('href') === filename) {
+            links[i].parentNode.removeChild(links[i]);
+            return;
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     let userOS = navigator.userAgent; 
     let mobileDevices = /android|iphone|kindle|ipad/i; 
@@ -15,5 +25,5 @@ document.addEventListener('DOMContentLoaded', function(){
     } else { 
         loadCSS('css/desktopMain.css');
     }
-    document.body.style = "visibility: visible";
+    removeCSS("css/initialHidden.css")
 });
