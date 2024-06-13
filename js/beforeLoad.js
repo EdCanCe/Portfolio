@@ -14,3 +14,7 @@ if (isMobileDevice) {
 } else { 
     loadCSS('css/desktopMain.css');
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.body.style = "visibility: visible";
+});
