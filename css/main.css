@@ -86,7 +86,7 @@ nav img{
 #home{
     padding: 0 0 4em 0;
     margin: 0;
-    height: calc(100vh);
+    height: calc(100vh - 4em);
     display: flex;
     top: 0;
     justify-content: center;
@@ -181,7 +181,7 @@ nav img{
     text-align: center;
     background-color: rgba(0, 255, 21, 0.267);
     color: var(--white);
-    margin: 3em auto;
+    margin: 3em auto 0 auto;
     font-size: 1em;
     padding: 0.3em 0.9em;
     border-radius: 3em;
@@ -198,4 +198,29 @@ nav img{
 
 #home .button:active{
     scale: 0.9;
+}
+
+.main-aux{
+    background: 
+    linear-gradient(to bottom, 
+        rgba(255, 0, 0, 0) 0px,      /* Color blanco con opacidad */
+        #e8fff0be 160px,     /* Degradado hasta 40px */
+        #e8fff0be 100%                       /* Color sólido negro hasta el final */
+    );
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+.main-aux *{
+    color: black;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact{
+    height: 200px;
+    background-color: var(--darkGreen);
 }
