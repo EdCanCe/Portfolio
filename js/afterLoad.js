@@ -33,5 +33,3 @@ async function toggleContainer(not, yes) {
 }
 
 changeWord(am, changeHeader);
-
-loadCSS('css/mobileMain.css');
