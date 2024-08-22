@@ -8,50 +8,72 @@
         <meta name="author" content="EdCanCe">
         <meta name="keywords" content="Developer, portfolio">
         <script src="js/beforeLoad.js"></script>
-        <link rel="stylesheet" href="css/initialHidden.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <header>
-            <h1>Hi!</h1>
-            <h2>I'm Edmundo Canedo</h2>
-            <h2>I'm a <span id="headerChanger"></span></h2>
+
+        <nav>
+            <img src="">
+            <div>
+                <a href="">HOME</a>
+                <a href="">PROJECTS</a>
+                <a href="">SKILLS</a>
+                <a href="">CONTACT</a>
+            </div>
+        </nav>
+
+        <header> <!-- La idea es que esto cubra toda la pantalla -->
+            <div class="container">
+                <h1>Edmundo Canedo</h1>
+                <h3>I'm a <span id="headerChanger"></span> <span class="textCursor">|</span></h3>
+            </div>
+            <div>
+                <img src="">
+                <img src=""> <!-- Solo para añadir la línea -->
+            </div>
         </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I’m a 3rd-semester Bachelor of Science in Computer Science student at Tecnológico de Monterrey. I also completed a major in Programming in high school, giving me 4 years of coding experience.</p>
+        <div class="main">
 
-            <p>Although I’m still relatively new to the field, I’m currently using GNU/Linux as my main desktop environment to enhance my overall coding skills and learn new technologies.</p>
+            <section id="about">
+                <h2>About Me</h2>
+                    <div class="lefSide">
 
-            <p>Through regular school activities, I’ve learned to work effectively as both a team member and a leader. In areas where I had less experience, I contributed to the team and used it as an opportunity to learn. In areas where I had extensive knowledge, I often took on a leadership role, demonstrating my ability to work in both capacities.</p>
+                        <!-- Pon la imagen del lado izquierdo con una especie de nose alch -->
+                    </div>
+                    <div class="rightSide">
+                        <p>I’m a 3rd-semester Bachelor of Science in Computer Science student at Tecnológico de Monterrey. I also completed a major in Programming in high school, giving me 4 years of coding experience.</p>
 
-        </section>
-    
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Nombre del Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
-            </article>
-            <article>
-                <h3>Nombre del Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
-            </article>
-            <!-- Agrega más proyectos aquí -->
-        </section>
+                        <p>Although I’m still relatively new to the field, I’m currently using GNU/Linux as my main desktop environment to enhance my overall coding skills and learn new technologies.</p>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Nombre del Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
-            </article>
-            <article>
-                <h3>Nombre del Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
-            </article>
-            <!-- Agrega más proyectos aquí -->
-        </section>
+                        <p>Through regular school activities, I’ve learned to work effectively as both a team member and a leader. In areas where I had less experience, I contributed to the team and used it as an opportunity to learn. In areas where I had extensive knowledge, I often took on a leadership role, demonstrating my ability to work in both capacities.</p>
+
+                        <p>I’m someone who always tries to see the bright side of things and stay positive, even when challenges come my way. This perspective has really shaped my journey. It led me to dive into competitive programming, which originated my love for coding and drove me to study computer science.</p>
+                    </div>
+            </section>
+        
+            <section id="projects">
+                <h2>Projects</h2>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <article>
+                    <h3>Nombre del Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                </article>
+                <article>
+                    <h3>Nombre del Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                </article>
+                <!-- Agrega más proyectos aquí -->
+            </section>
+
+            <footer id="contact"> <!-- Servirá como footer -->
+
+            </footer>
+
+        </div>
     
     </body>
     <script src="js/afterLoad.js"></script>
