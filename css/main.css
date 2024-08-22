@@ -223,11 +223,6 @@ nav img{
     margin: 0 auto;
 }
 
-#contact{
-    height: 200px;
-    background-color: var(--darkGreen);
-}
-
 .main a{
     color: var(--darkGreen);
     text-shadow: 0 0 1em var(--green);
