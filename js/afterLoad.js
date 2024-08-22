@@ -33,22 +33,3 @@ async function toggleContainer(not, yes) {
 }
 
 changeWord(am, changeHeader);
-
-document.getElementById('downloadButton').addEventListener('click', function() {
-    const fileContent = 'Hello, World!'; // Content of your file
-    const fileName = 'hello.txt'; // Desired file name
-    const fileBlob = new Blob([fileContent], { type: 'text/plain' });
-
-    // Create a URL for the Blob and trigger the download
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(fileBlob);
-    link.download = fileName;
-
-    // Trigger the download by simulating a click
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    // Release the Object URL
-    URL.revokeObjectURL(link.href);
-});

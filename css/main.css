@@ -116,9 +116,6 @@ nav img{
     flex-direction: column;
 }
 
-.headerText *{
-}
-
 @keyframes textGlowUp {
     0%{
         text-shadow: 0px 0px 1em var(--green), 0px 0px 2em var(--green);
@@ -228,4 +225,63 @@ nav img{
 #contact{
     height: 200px;
     background-color: var(--darkGreen);
+}
+
+.main a{
+    color: var(--darkGreen);
+    text-shadow: 0 0 1em var(--green);
+}
+
+article h3{
+    margin-bottom: 0.2em;
+}
+
+article p{
+    margin: 0 0 0 1em;
+}
+
+footer{
+    width: 100%;
+    background: var(--darkerGreen);
+    margin: 0;
+    border-top: 0.3cm solid var(--white);
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.foot *{
+    color: var(--white);
+}
+
+footer h2{
+    text-align: center;
+}
+
+.foot img{
+    width: 140px;
+    border-radius: 120px;
+    border: none;
+    box-shadow: 0 0 20px 20px var(--darkerGreen);
+}
+
+.foot .container{
+    width: fit-content;
+    margin: 0;
+    height: fit-content;
+    padding: 0;
+}
+
+.foot p{
+    margin: 3px;
 }
