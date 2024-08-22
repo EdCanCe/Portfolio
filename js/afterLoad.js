@@ -1,5 +1,5 @@
 let changeHeader = document.getElementById("headerChanger");
-let am = ["Full Stack Developer", "College Student", "Linux Enthusiast", "Determined Person"];
+let am = ["Full Stack Developer", "Bachelor Student", "Linux Enthusiast", "Determined Person"];
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
