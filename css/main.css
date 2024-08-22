@@ -27,8 +27,8 @@ html{
 }
 
 .textCursor{
-    background-color: forestgreen;
-    color: forestgreen;
+    background-color: var(--white);
+    color: var(--white);
 }
 
 nav{
