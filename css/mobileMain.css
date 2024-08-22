@@ -5,3 +5,8 @@
 body{
     visibility: visible;
 }
+
+nav{
+    height: 3em;
+    background-color: blue;
+}

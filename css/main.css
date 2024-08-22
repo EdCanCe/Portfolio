@@ -26,10 +26,22 @@ html{
 }
 
 nav{
+    position: sticky;
     background-color: var(--darkGreen);
     margin: o;
+    display: flex;
+    height: 6em;
+    flex-direction: column;
+    justify-content: center;
 }
 
-nav *{
+nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a{
     color: var(--white) !important;
+    text-decoration: none;
 }
