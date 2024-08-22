@@ -75,7 +75,7 @@ nav img{
 
 #home{
     background-color: var(--black);
-    padding: 0 0 0 4em;
+    padding: 0 0 4em 0;
     margin: 0;
     height: calc(100vh);
     display: flex;
@@ -144,5 +144,20 @@ nav img{
     }
     100%{
         box-shadow: 0px 0px 1em 0em var(--green);
+    }
+}
+
+@media (max-width: 1029px) {
+    .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .headerText *{
+        text-align: center;
+    }
+
+    .container img{
+        margin: 2em auto;
     }
 }
