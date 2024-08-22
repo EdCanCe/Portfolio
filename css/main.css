@@ -52,6 +52,7 @@ nav{
     justify-content: center;
     top: 0;
     box-shadow: 0 -30px 50px 50px var(--black);
+    z-index: 20;
 }
 
 nav div{
@@ -302,12 +303,19 @@ footer h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transition: background-color 0.2s, scale 0.2s;
+    transition: background-color 0.15s;
 }
 
 .card:hover{
     background-color: var(--black);
-    scale: 1.05;
+}
+
+.card:hover a{
+    color: var(--green);
+}
+
+.card:hover h3{
+    scale: 1.2;
 }
 
 .card h3{
@@ -319,6 +327,10 @@ footer h2{
     color: var(--white);
     text-shadow: none;
     text-decoration: none;
+}
+
+.card a, .card h3{
+    transition: color 0.1s, scale 0.1s;
 }
 
 .card p{
