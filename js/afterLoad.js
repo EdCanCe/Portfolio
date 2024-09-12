@@ -12,7 +12,9 @@ async function changeWord(arr, direction) {
             direction.textContent = "" + direction.textContent + arr[i][j];
             await sleep(100 - (j * 2));
         }
-        await sleep(1000);
+        document.getElementsByClassName("textCursor")[0].style.animation ="infinite blinking 1s";
+        await sleep(2000);
+        document.getElementsByClassName("textCursor")[0].style.animation ="none";
         for (let j = 0; j < arr[i].length; j++) {
             direction.textContent = "" + direction.textContent.slice(0, -1);
             await sleep(15);

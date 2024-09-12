@@ -39,6 +39,30 @@ html{
 .textCursor{
     background-color: var(--white);
     color: var(--white);
+    transition: none;
+    opacity: 0;
+}
+
+@keyframes blinking{
+    0%{
+        opacity: 0;
+    }
+
+    49%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
 }
 
 nav{
